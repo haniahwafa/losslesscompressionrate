@@ -112,7 +112,7 @@ Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01
 
 Pembagian Tugas
 - Hani’ah Wafa - 13516053		: RLE dan Huffman Encoding
-- Dinda Yora Islami - 13516067	: Half Byte
+- Dinda Yora Islami - 13516067	: Data Compression and Half Byte
 
 Referensi :
 
