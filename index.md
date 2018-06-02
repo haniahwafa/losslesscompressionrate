@@ -110,6 +110,7 @@ Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01
 
 
 Referensi :
+
 http://artofartikel.blogspot.com/2012/05/proses-kompresi-dengan-metode-half-byte.html
 http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html
 www.geeksforgeeks.org/run-length-encoding/amp/
