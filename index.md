@@ -27,13 +27,13 @@ Run-length Encoding (RLE) adalah bentuk dari lossless data compression yang sang
 
 Dalam bentuk aslinya, citra ini akan membutuhkan 49 bits. Jika kemudian kita mengeksekusi algoritma RLE dengan total 4 bit untuk tiap run-nya (1 bit untuk menyimpan nilainya dan 3 bit untuk menyimpan banyaknya). Maka akan memberi hasil sebagai berikut.
 
- Baris 1 : 07
- Baris 2 : 17
- Baris 3 : 17
- Baris 4 : 17
- Baris 5 : 1403
- Baris 6 : 1403
- Baris 7 : 07
+1.  Baris 1 : 07
+2.  Baris 2 : 17
+3.  Baris 3 : 17
+4.  Baris 4 : 17
+5.  Baris 5 : 1403
+6.  Baris 6 : 1403
+7.  Baris 7 : 07
 
 Sehingga setelah dikompresi kita hanya akan membutuhkan 36 bit. Dengan kata lain, pada kasus ini algoritma RLE memiliki compression rate sebesar 49 : 36 atau sekitar 1.36 : 1.
  
@@ -50,17 +50,39 @@ Sehingga setelah dikompresi kita hanya akan membutuhkan 36 bit. Dengan kata lain
 
 Untuk kasus kedua, algoritma RLE akan memberikan hasil sebagai berikut.
 
- Baris 1 : 021302
- Baris 2 : 130411
- Baris 3 : 0314
- Baris 4 : 0215
- Baris 5 : 1403
- Baris 6 : 1205
- Baris 7 : 0413
+1.  Baris 1 : 021302
+2.  Baris 2 : 130411
+3.  Baris 3 : 0314
+4.  Baris 4 : 0215
+5.  Baris 5 : 1403
+6.  Baris 6 : 1205
+7.  Baris 7 : 0413
 
 Sehingga setelah dikompresi kita hanya membutuhkan 64 bit. Dengan kata lain, pada kasus ini algoritma RLE justru akan membuat ukuran data yang kita butuhkan untuk menyimpan data yang telah di-compress menjadi lebih besar daripada untuk menyimpan data aslinya.
 Dari dua contoh kasus di atas, sangat jelas terlihat bahwa algoritma ini tidak cukup baik untuk mengkompresi data secara umum. Algoritma ini akan cocok untuk mengkompresi data yang banyak memiliki nilai yang sama pada elemen data yang berurutan. Namun akan menjadi tidak efektif untuk kasus data yang sebaliknya karena justru akan memberi ukuran data yang sama atau bahkan lebih besar dari ukuran data aslinya.
 
+# Half Byte
+
+# Huffman Encoding
+
+Metode ini diberi nama sesuai nama penemunya yaitu D.A. Huffman yang mengembangkan prosedur tersebut pada tahun 1950-an. Ide pengembangan metode ini didasari oleh data penggunaan karakter ASCII, dimana terkadang karakter ASCII dengan ukuran byte yang besar justru adalah karakter yang sering digunakan dan sebaliknya, karakter ASCII dengan ukuran byte yang kecil justru kurang sering digunakan. Sehingga muncul ide untuk menggunakan lebih sedikit bit (satu atau dua bit) dalam menginterpretasikan karakter yang sering digunakan dan membiarkan karakter yang jarang digunakan diinterpretasikan menggunakan lebih banyak bit.
+
+Skema dalam metode Huffman ini diawali dengan menghitung probabilitas kemunculan setiap karakter, kemudian memberi Huffman code untuk tiap karakter dengan aturan karakter yang memiliki probabilitas lebih besar akan memiliki Huffman code dengan ukuran bit yang lebih kecil. Skema penentuan Huffman code ini dapat dilakukan dengan membuat pohon Huffman. Prosedur pembuatan pohon Huffman secara umum adalah dengan mencari dua buah karakter yang memiliki nilai peluang terkecil, kemudian mengkombinasikan kedua karakter tersebut menjadi simpul parent dengan peluang merupakan jumlah peluang dari kedua anaknya. Ulangi langkah ini hingga semua karakter telah menjadi simpul pada pohon Huffman.
+
+Berikut adalah contoh perhitungan compression rate dengan penggunaan Huffman Encoding.
+
+Misal kita memiliki string masukkan berupa ACDABA. Maka kemudian kita akan menghitung probabilitas kemunculan dari tiap karakter dan memberikan Huffman code untuk masing-masing karakter.
+
+| Karakter | Probabilitas Kemunculan | Huffman Code |
+| :---: | :---: | :---: |
+| A | 1/2 | 0 |
+| B | 1/6 | 10 |
+| C | 1/6 | 110 |
+| D | 1/6 | 111 |
+
+Dengan pohon Huffman yang terbentuk sebagai berikut.
+
+Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01101110100. Data asli yang awalnya membtuhkan 6 byte, setelah dilakukan kompresi menjadi hanya membutuhkan 11 bit saja.
 
 ## Welcome to GitHub Pages
 
