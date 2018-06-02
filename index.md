@@ -83,7 +83,7 @@ Jika dilihat dari biner tiap-tiap huruf dapat kita amati bahwa bit sebelah kiri 
 Saat karakter yang bit kirinya sama secara berderet, maka algoritma ini mengkompres data tersebut diawali dengan bit penanda kemudisan bit pertama dari deretan yang sama diikuti dengan pasangn bit kanan dari deretan tersebut dan ditutup dengan bit penanda. Bit penanda (marker bit) berupa suatu byte yang dipilih secara acak asalkan digunakan secara konsisten pada seluruh bit penanda. 
 Dari biner diatas dikompresi menjadi seperti berikut
 
-![Image](https://plus.google.com/u/0/photos/photo/101412960273547426199/6562502913968458802?authkey=CL7oqe307-j76gE)
+![Image of table](https://lh3.googleusercontent.com/-8g8SdkczjAs/WxKxoXCOTDI/AAAAAAAAAVA/Z68rPMmJOhEnkz447EYm7uRYmZvGqY3uACJoC/w530-h329-n-rw/Sistem-Pakar-Cover.png)
 
 Deretan data sebelah kiri merupakan deretan data pada file asli, sedangkan deretan data sebelah kanan merupakan deretan data hasil pemampatan dengan algoritma Half-Byte.
 
