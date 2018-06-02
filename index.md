@@ -63,6 +63,28 @@ Dari dua contoh kasus di atas, sangat jelas terlihat bahwa algoritma ini tidak c
 
 # Half Byte
 
+Metode  kompresi Half Byte  merupakan suatu metode kompresi dengan prosesnya adalah memanfatkan empat bit sebelah kiri yang sering sama secara berurutan terutama pada file-file text. Misalnya pada suatu file yang berisi data text bertuliskan “mengambil” yang diterjemahkan  dalam heksadesimal dan biner pada tabel berikut
+
+
+Karakter | Biner | Heksadesimal |
+| --- | --- | --- |
+m | 01101101 | 6D |
+e | 01100101 | 65 |
+n | 01101110 | 6E |
+g | 01100111 | 67 |
+a | 01100001 | 61 |
+m | 01101101 | 6D |
+b | 01100010 | 62 |
+i | 01100001 | 69 | 
+l | 01101100 | 6C |
+
+Jika dilihat dari biner tiap-tiap huruf dapat kita amati bahwa bit sebelah kiri memiliki 4 bit yang sama yaitu 0110. Half Byte mamanfaatkan bit 4 bit yang sama sebelah kiri ini untuk melakukan kompresi data.
+
+Saat karakter yang bit kirinya sama secara berderet, maka algoritma ini mengkompres data tersebut diawali dengan bit penanda kemudisan bit pertama dari deretan yang sama diikuti dengan pasangn bit kanan dari deretan tersebut dan ditutup dengan bit penanda. Bit penanda (marker bit) berupa suatu byte yang dipilih secara acak asalkan digunakan secara konsisten pada seluruh bit penanda. 
+Dari biner diatas dikompresi menjadi seperti berikut
+
+Deretan data sebelah kiri merupakan deretan data pada file asli, sedangkan deretan data sebelah kanan merupakan deretan data hasil pemampatan dengan algoritma Half-Byte.
+
 # Huffman Encoding
 
 Metode ini diberi nama sesuai nama penemunya yaitu D.A. Huffman yang mengembangkan prosedur tersebut pada tahun 1950-an. Ide pengembangan metode ini didasari oleh data penggunaan karakter ASCII, dimana terkadang karakter ASCII dengan ukuran byte yang besar justru adalah karakter yang sering digunakan dan sebaliknya, karakter ASCII dengan ukuran byte yang kecil justru kurang sering digunakan. Sehingga muncul ide untuk menggunakan lebih sedikit bit (satu atau dua bit) dalam menginterpretasikan karakter yang sering digunakan dan membiarkan karakter yang jarang digunakan diinterpretasikan menggunakan lebih banyak bit.
@@ -84,21 +106,40 @@ Dengan pohon Huffman yang terbentuk sebagai berikut.
 
 Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01101110100. Data asli yang awalnya membtuhkan 6 byte, setelah dilakukan kompresi menjadi hanya membutuhkan 11 bit saja.
 
-# Pembagian Tugas
+## Welcome to GitHub Pages
 
-1.  Hani'ah Wafa      : RLE dan Huffman Encoding
-2.  Dinda Yora Islami :
+You can use the [editor on GitHub](https://github.com/haniahwafa/losslesscompressionrate/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-# Referensi
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-  [1] http://artofartikel.blogspot.com/2012/05/proses-kompresi-dengan-metode-half-byte.html
-  
-  [2] http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html
-  
-  [3] www.geeksforgeeks.org/run-length-encoding/amp/
-  
-  [4] http://academic.mu.edu/phys/matthysd/web226/L0425.htm
-  
-  [5] http://www.dspguide.com/ch27/3.htm
-  
-  [6] https://www.prepressure.com/library/compression-algorithm/huffman
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/haniahwafa/losslesscompressionrate/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
