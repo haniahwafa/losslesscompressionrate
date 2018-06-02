@@ -106,10 +106,13 @@ Misal kita memiliki string masukkan berupa ACDABA. Maka kemudian kita akan mengh
 
 Dengan pohon Huffman yang terbentuk sebagai berikut.
 
+![Image of table](https://photos.google.com/photo/AF1QipNVU5qexpqqm-RLlFf1iG0K-LIKC0UnD0QrQmmj)
+
 Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01101110100. Data asli yang awalnya membtuhkan 6 byte, setelah dilakukan kompresi menjadi hanya membutuhkan 11 bit saja.
 
 
 Referensi :
+
 
 http://artofartikel.blogspot.com/2012/05/proses-kompresi-dengan-metode-half-byte.html
 http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html
