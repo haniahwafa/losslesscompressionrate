@@ -17,7 +17,6 @@ Run-length Encoding (RLE) adalah bentuk dari lossless data compression yang sang
 Kasus Pertama
 
  0 | 0 | 0 | 0 | 0 | 0 | 0 |
- --- | --- | --- | --- | --- | --- | --- |
  1 | 1 | 1 | 1 | 1 | 1 | 1 |
  1 | 1 | 1 | 1 | 1 | 1 | 1 |
  1 | 1 | 1 | 1 | 1 | 1 | 1 |
