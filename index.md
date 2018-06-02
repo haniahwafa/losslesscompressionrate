@@ -106,10 +106,13 @@ Misal kita memiliki string masukkan berupa ACDABA. Maka kemudian kita akan mengh
 
 Dengan pohon Huffman yang terbentuk sebagai berikut.
 
-![Image of huffmantree](https://photos.google.com/photo/AF1QipNVU5qexpqqm-RLlFf1iG0K-LIKC0UnD0QrQmmj)
+![Image of huffmantree](https://lh3.googleusercontent.com/-sWwG-gsmW_I/WxK45qOn7lI/AAAAAAAAAV4/CMb2JkeQhWIuNeLCbeGAmdiOakCVEigQgCJoC/w530-h379-n-rw/Capture.PNG)
 
 Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01101110100. Data asli yang awalnya membtuhkan 6 byte, setelah dilakukan kompresi menjadi hanya membutuhkan 11 bit saja.
 
+Pembagian Tugas
+- Hani’ah Wafa - 13516053		: RLE dan Huffman Encoding
+- Dinda Yora Islami - 13516067	: Half Byte
 
 Referensi :
 
