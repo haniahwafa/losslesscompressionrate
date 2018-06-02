@@ -10,20 +10,20 @@ Kompresi data adalah sebuah cara untuk memadatkan data sehingga hanya memerlukan
 
 Pada artikel kali ini kita akan membahas lebih lanjut tentang Kompresi data tanpa kehilangan atau Lossless data compression. Lossless data compression adalah teknik kompresi dimana data hasil kompresi dapat didekompres lagi dan menghasilkan hasil yang tepat sama dengan data sebelum dikompres. Contohnya yaitu ZIP, RAR, GZIP, 7-Zip. Teknik ini digunakan jika dibutuhkan data yang setelah di kompresi harus dapat diekstrak/ didekompres lagi tepat sama. Kadang kala ada data-data yang setelah dikompresi dengan Teknik ini ukurannya menjadi lebih besar atau sama.
 
-# Run-length Encoding (RLE)
+## Run-length Encoding (RLE)
 
 Run-length Encoding (RLE) adalah bentuk dari lossless data compression yang sangat sederhana. Algoritma ini menyimpan elemen data yang berurutan dan memiliki nilai yang sama, sebagai sebuah data tunggal yang terdiri dari nilai dan banyaknya. Contohnya, jika string masukkannya adalah “wwwwwaaadexxxxxx” maka algoritma run-length encoding akan mengembalikan “w4a3d1e1x6”. Hasil ini dapat diinterpretasikan sebagai empat buah w, tiga buah a, sebuah d, sebuah x dan enam buah x. Berikut adalah contoh perhitungan dari RLE compression rate dari sebuah citra.
  
 Kasus Pertama
 
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 0 | 0 | 0 |
-| 1 | 1 | 1 | 1 | 0 | 0 | 0 |
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+ 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+ --- | --- | --- | --- | --- | --- | --- |
+ 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+ 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+ 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+ 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+ 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+ 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 Dalam bentuk aslinya, citra ini akan membutuhkan 49 bits. Jika kemudian kita mengeksekusi algoritma RLE dengan total 4 bit untuk tiap run-nya (1 bit untuk menyimpan nilainya dan 3 bit untuk menyimpan banyaknya). Maka akan memberi hasil sebagai berikut.
 Baris 1 : 07
