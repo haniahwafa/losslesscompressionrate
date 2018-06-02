@@ -84,40 +84,16 @@ Dengan pohon Huffman yang terbentuk sebagai berikut.
 
 Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01101110100. Data asli yang awalnya membtuhkan 6 byte, setelah dilakukan kompresi menjadi hanya membutuhkan 11 bit saja.
 
-## Welcome to GitHub Pages
+# Pembagian Tugas
 
-You can use the [editor on GitHub](https://github.com/haniahwafa/losslesscompressionrate/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Hani'ah Wafa      :
+## Dinda Yora Islami :
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Referensi
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/haniahwafa/losslesscompressionrate/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[1] http://artofartikel.blogspot.com/2012/05/proses-kompresi-dengan-metode-half-byte.html
+[2] http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html
+[3] www.geeksforgeeks.org/run-length-encoding/amp/
+[4] http://academic.mu.edu/phys/matthysd/web226/L0425.htm
+[5] http://www.dspguide.com/ch27/3.htm
+[6] https://www.prepressure.com/library/compression-algorithm/huffman
