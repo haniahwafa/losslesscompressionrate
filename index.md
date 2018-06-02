@@ -86,14 +86,19 @@ Sehingga data yang telah dikompresi menggunakan Huffman Encoding akan menjadi 01
 
 # Pembagian Tugas
 
-## Hani'ah Wafa      :
-## Dinda Yora Islami :
+1.  Hani'ah Wafa      : RLE dan Huffman Encoding
+2.  Dinda Yora Islami :
 
 # Referensi
 
   [1] http://artofartikel.blogspot.com/2012/05/proses-kompresi-dengan-metode-half-byte.html
+  
   [2] http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html
+  
   [3] www.geeksforgeeks.org/run-length-encoding/amp/
+  
   [4] http://academic.mu.edu/phys/matthysd/web226/L0425.htm
+  
   [5] http://www.dspguide.com/ch27/3.htm
+  
   [6] https://www.prepressure.com/library/compression-algorithm/huffman
