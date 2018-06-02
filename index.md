@@ -115,10 +115,10 @@ Referensi :
 
 
 http://artofartikel.blogspot.com/2012/05/proses-kompresi-dengan-metode-half-byte.html
-http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html
-www.geeksforgeeks.org/run-length-encoding/amp/
-http://academic.mu.edu/phys/matthysd/web226/L0425.htm
-http://www.dspguide.com/ch27/3.htm
+http://slailinux.blogspot.com/2012/04/algoritma-kompresi-data.html                   
+www.geeksforgeeks.org/run-length-encoding/amp/                                       
+http://academic.mu.edu/phys/matthysd/web226/L0425.htm                                
+http://www.dspguide.com/ch27/3.htm                                                   
 https://www.prepressure.com/library/compression-algorithm/huffman
 
 
